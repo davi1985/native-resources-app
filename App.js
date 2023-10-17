@@ -35,7 +35,10 @@ export default function App() {
                   icon="add"
                   color={tintColor}
                   size={24}
-                  onPress={() => navigation.navigate("AddPlace")}
+                  onPress={() => {
+                    navigation.navigate("AddPlace");
+                    console.log("clicked");
+                  }}
                 />
               ),
             })}
